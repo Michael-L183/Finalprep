@@ -50,7 +50,7 @@ const appRoutes: Routes = [
   { path: 'beverage-create', component: BeverageCreateComponent },
   // users
   { path: 'users', component: UsersComponent },
-  { path: 'user/:id', component: UsersComponent },
+  { path: 'user/:id', component: UserComponent },
   { path: 'user-create', component: UserCreateComponent },
 ];
 
@@ -71,7 +71,9 @@ const appRoutes: Routes = [
     BeverageCreateComponent,
     BeverageComponent,
     // users
-    UserService
+    UsersComponent,
+    UserCreateComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
