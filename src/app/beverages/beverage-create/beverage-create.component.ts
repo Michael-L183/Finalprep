@@ -20,6 +20,10 @@ export class BeverageCreateComponent implements OnInit {
 
   async createBeverage(beverage: Object) {
 
+    const resp = await this.beverageService.addBeverage(beverage);
+    if (resp){
+      this.router.navigate(['/beverages']);
+    }
   }
 
 }
